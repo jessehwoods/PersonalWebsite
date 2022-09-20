@@ -4,77 +4,19 @@
 <title>Home Page of Jesse Woods - My Projects</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-}
-
-/* Style the header */
-.header {
-  padding: 80px;
-  text-align: center;
-  background: #CC0000;
-  color: white;
-}
-
-/* Increase the font size of the h1 element */
-.header h1 {
-  font-size: 40px;
-}
-
-/* Column container */
-.row {  
-  display: flex;
-  flex-wrap: wrap;
-}
-
-/* Create two unequal columns */
-/* Sidebar/left column */
-.side {
-  flex: 30%;
-  background-color: #bfbdbd;
-  padding: 20px;
-}
-
-/* Main column */
-.main {   
-  flex: 70%;
-  background-color: #FFFFFF;
-  padding: 20px;
-}
-
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-  .row {   
-    flex-direction: column;
-  }
-}
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .navbar a {
-    float: none;
-    width:100%;
-  }
-}
-</style>
+<link rel="stylesheet" href="main.css">
 </head>
 <body>
 
 <div class="header">
   <h1>Jesse Woods</h1>
-  <p>Software Engineer</p>
+  <p>Software Developer</p>
 </div>
 
 <div class="row">
   <div class="side">
     <h2>My links</h2>
-    <p><a href="/website/index.html">Main Page</a></p>
+    <p><a href="index.html">Main Page</a></p>
     <p><a href="https://www.linkedin.com/in/jesse-woods">LinkedIn</a></p>
     <p><a href="https://github.com/jessehwoods">GitHub</a></p>
     <p><a href="https://www.codingame.com/profile/196f876f129586945db02cf400cf46ba1751552
@@ -87,7 +29,7 @@ body {
     <p>A simple solitaire card game about making poker hands and trying for the best score.</p>
     <p>I wrote it in Visual Studio 2022 with C# for the back end and Windows Forms for the GUI. Just unzip and run the exe. Unfortunately, Windows Forms is a Microsoft product, so I can't guarantee it will run properly on a  Mac.</p>
     <p>You can view the git repository for this project <a href="https://github.com/jessehwoods/OregonSolitaire.git">here</a>. If you don't trust my exe, please feel free to compile it from there.</p>
-    <p><a href="/website/myprojects/OregonSolitaire.zip">Oregon Solitaire</a></p>
+    <p><a href="./project-files/OregonSolitaire.zip">Oregon Solitaire</a></p>
   </div>
 </div>
 
