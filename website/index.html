@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page of Jesse Woods</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./main.css">
 </head>
 <body>
 
@@ -32,7 +32,7 @@
         <p>Please contact me with any questions.</p>
 
         <h2>About My Website</h2>
-        <p>This homepage is a static website hosted on an AWS S3 bucket, and delivered to you through Amazon's CloudFront. I chose Cloudfront because it allows me to deliver the site without making the S3 bucket public, which is required when using the built in website hosting functionality of an S3 bucket.</p>
+        <p>This homepage is a static website hosted on an AWS S3 bucket, and delivered to you through Amazon's CloudFront. I chose Cloudfront Content Delivery Network. I used Cloudfront, rather than the S3 static website hosting, because it allows me to deliver the site without making the S3 bucket public, which is required when using the built in website hosting.</p>
         <p>I've written the code in Visual Studio Code, as Visual Studio 2022 seemed like overkill for a simple project like this. The code for the site is held in a Git repository on Github that can be viewed <a href="https://github.com/jessehwoods/PersonalWebsite.git">here</a>. I've used Amazon's CodePipeline to deliver updated code to the S3 bucket. Code merged to the "deployment" branch of the repository is automatically delivered to the S3 bucket and goes live on my website.</p>
         <p>I chose Amazon CodePipeline over other options, particularly GitHub's workflows. The CodePipeline was easy to set up, integrates directly with the S3 architecture, and doesn't require me to store additional private data and credentials on Github.</p>
       </div>
