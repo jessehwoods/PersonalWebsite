@@ -3,9 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home Page of Jesse Woods</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    blah blah blah
-</body>
+
+    <div class="header">
+      <h1>Jesse Woods</h1>
+      <p>Software Engineer</p>
+    </div>
+    
+    <div class="row">
+      <div class="side">
+        <h2>My links</h2>
+        <p><a href="https://www.linkedin.com/in/jesse-woods">LinkedIn</a></p>
+        <p><a href="https://github.com/jessehwoods">GitHub</a></p>
+        <p><a href="https://www.codingame.com/profile/196f876f129586945db02cf400cf46ba1751552
+    ">CodinGame</a></p>
+        <p><a href="https://www.hackerrank.com/jessehwoods?hr_r=1">HackerRank</a></p>
+        <p><a href="/website/myprojects/projectlist.html">My Projects</a></p>
+    
+    
+      </div>
+      <div class="main">
+        <h2>About Me</h2>
+        <p>I'm a recent graduate from North Carolina State University looking to move into software development.</p>
+        <p>I have a proven record of working well with managers, co-workers, and clients. I communicate technical ideas effectively. I also code effectively in Java and C#, with more languages to come.</p>
+        <p>Please contact me with any questions.</p>
+
+        <h2>About My Website</h2>
+        <p>This homepage is a static website hosted on an AWS S3 bucket, and delivered to you through Amazon's CloudFront. I chose Cloudfront because it allows me to deliver the site without making the S3 bucket public, which is required when using the built in website hosting functionality of an S3 bucket.</p>
+        <p>I've written the code in Visual Studio Code, as Visual Studio 2022 seemed like overkill for a simple project like this. The code for the site is held in a Git repository on Github that can be viewed <a href="https://github.com/jessehwoods/PersonalWebsite.git">here</a>. I've used Amazon's CodePipeline to deliver updated code to the S3 bucket. Code merged to the "deployment" branch of the repository is automatically delivered to the S3 bucket and goes live on my website.</p>
+        <p>I chose Amazon CodePipeline over other options, particularly GitHub's workflows. The CodePipeline was easy to set up, integrates directly with the S3 architecture, and doesn't require me to store additional private data and credentials on Github.</p>
+      </div>
+    </div>
+    
+    </body>
 </html>
