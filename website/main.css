@@ -23,7 +23,7 @@
   /* Column container */
   .row {  
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
   }
   
   /* Create two unequal columns */
@@ -39,11 +39,4 @@
     flex: 90%;
     background-color: #FFFFFF;
     padding: 20px;
-  }
-  
-  /* Responsive layout - when the screen is less than defined width, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 400px) {
-    .row {   
-      flex-direction: column;
-    }
   }
