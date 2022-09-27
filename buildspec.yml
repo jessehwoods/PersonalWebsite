@@ -13,9 +13,11 @@ phases:
     commands:
       - echo build process started now
       - ng build --configuration=production
+      - pwd | cat
+      - ls | cat
   post_build:
     commands:
       - echo Build completed on
 artifacts:
   files:
-    - '\website-source\dist\website-source\**\*'
+    - 'website-source/dist/website-source/**/*'
