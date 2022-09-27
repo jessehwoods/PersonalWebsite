@@ -12,10 +12,10 @@ phases:
   build:
     commands:
       - echo build process started now
-      - ng build --configuration=production --ouptut-path /dist
+      - ng build --configuration=production
   post_build:
     commands:
       - echo Build completed on
 artifacts:
   files:
-    - /dist/*
+    - ./dist/website-source/*
