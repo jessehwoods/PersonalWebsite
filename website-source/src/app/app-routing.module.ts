@@ -6,6 +6,8 @@ import { ProjectListComponent } from './project-list/project-list.component';
 const routes: Routes = [
   {path: 'home-page', component: HomePageComponent},
   {path: 'project-list', component: ProjectListComponent},
+  {path: '', redirectTo: '/home-page', pathMatch: 'full'}
+
 ];
 
 @NgModule({
