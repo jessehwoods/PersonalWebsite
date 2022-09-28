@@ -16,7 +16,7 @@ phases:
   post_build:
     commands:
       - echo Build completed on
-      - mv website-source/dist/websitesource output-files
+      - mv 'website-source/dist/websitesource' 'output-files'
 artifacts:
   files:
     - '**/*'
