@@ -13,11 +13,12 @@ phases:
     commands:
       - echo build process started now
       - ng build --configuration=production
+      - ng build --configuration=production --output-path=../output-files
   post_build:
     commands:
       - echo Build completed on
-      - mv 'website-source/dist/websitesource' 'output-files'
 artifacts:
   files:
     - '**/*'
   base-directory: 'output-files'
+  delete-path: yes
