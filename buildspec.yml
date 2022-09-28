@@ -20,4 +20,4 @@ phases:
 artifacts:
   files:
     - '**/*'
-    base-directory: 'output-files'
+  base-directory: 'output-files'
