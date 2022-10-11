@@ -25,20 +25,20 @@
   /* Column container */
   .row {  
     display: flex;
-    flex-wrap: wrap-reverse;
+    flex-direction: row;
   }
   
   /* Create two unequal columns */
   /* Sidebar/left column */
   .side {
-    flex: 10%;
+    flex: 20%;
     background-color: #bfbdbd;
     padding: 20px;
   }
   
   /* Main column */
   .main {   
-    flex: 90%;
+    flex: 80%;
     background-color: #FFFFFF;
     padding: 20px;
   }
