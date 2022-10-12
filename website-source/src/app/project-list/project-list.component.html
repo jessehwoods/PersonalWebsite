@@ -1,5 +1,5 @@
 <div *ngFor = "let project of projects">
     <h2> {{ project.name }} </h2>
     <p> {{ project.description }} </p>
-    <p> {{ project.repo }} </p>
+    <p> You can view the repo for this project <a [href]="project.repo">here</a>.</p>
 </div>
