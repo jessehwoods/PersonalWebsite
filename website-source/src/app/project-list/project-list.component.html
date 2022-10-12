@@ -1,5 +1,5 @@
-<h2>Oregon Solitaire</h2>
-<p>A simple solitaire card game about making poker hands and trying for the best score.</p>
-<p>I made this project because I wanted to create a simple front-end for a desktop app, I wanted to deal with randomization in a program, and I really like Oregon. I've played it with a deck of cards before, so I was interested in implementing it in C#.</p>
-<p>I wrote it in Visual Studio 2022 with C# for the back end and Windows Forms for the GUI. Just unzip and run the exe. Unfortunately, Windows Forms is a Microsoft product, so I can't guarantee it will run properly on a  Mac.</p>
-<p>You can view the git repository for this project <a href="https://github.com/jessehwoods/OregonSolitaire.git">here</a>.</p>
+<div *ngFor = "let project of projects">
+    <h2> {{ project.name }} </h2>
+    <p> {{ project.description }} </p>
+    <p> {{ project.repo }} </p>
+</div>
