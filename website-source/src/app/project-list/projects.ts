@@ -7,7 +7,17 @@ export interface Project{
 export const projects = [
     {
         name: 'Oregon Solitaire',
-        description: 'A solitaire card game about making poker hands and trying for the best score. I made this project because I wanted to create a simple front-end for a desktop app, I wanted to deal with randomization in a program, and I really like the game Oregon. I wrote it in Visual Studio 2022 with C# for the back end and Windows Forms for the GUI.',
+        description: 'A solitaire card game about making poker hands and trying for the best score. I happen to like it as a solitaire game, and I coulldn\'t any other digital implementations.',
         repo: 'https://github.com/jessehwoods/OregonSolitaire.git'
+    },
+    {
+        name: 'Mazes',
+        description: 'A program for algorithmically generating mazes. I\'ve completed the binary maze generator as of writing this.',
+        repo: 'https://github.com/jessehwoods/Mazes.git'
+    },
+    {
+        name: 'Traveller Character Generator',
+        description: 'This is a character generator for an old game called Traveller. The readme has some details on what Traveller is, if you\'re curious.',
+        repo: 'https://github.com/jessehwoods/ClassicTravellerCharacterGenerator.git'
     }
 ]
