@@ -14,7 +14,7 @@ import { ProjectListComponent } from './project-list/project-list.component';
     PageHeaderComponent,
     HomePageComponent,
     SidebarComponent,
-    ProjectListComponent
+    ProjectListComponent,
   ],
   imports: [
     BrowserModule,
